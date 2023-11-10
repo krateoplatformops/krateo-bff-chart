@@ -1,0 +1,6 @@
+
+podEnv:
+  - name: KRATEO_BFF_PORT
+    value: "8080"
+  - name: KRATEO_BFF_DEBUG
+    value: "true"
