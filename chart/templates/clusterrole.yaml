@@ -11,6 +11,16 @@ rules:
   verbs:
   - get
   - list
+- apiGroups:
+  - rbac.authorization.k8s.io
+  resources:
+  - roles
+  - rolebindings
+  - clusterroles
+  - clusterrolebindings
+  verbs:
+  - get
+  - list
 # krateo bff crds
 - apiGroups:
   - widgets.ui.krateo.io
