@@ -10,7 +10,8 @@ spec:
   names:
     categories:
     - krateo
-    - widget
+    - cards
+    - widgets
     kind: CardTemplate
     listKind: CardTemplateList
     plural: cardtemplates
@@ -42,9 +43,6 @@ spec:
                 items:
                   description: API contains external api call info.
                   properties:
-                    enabled:
-                      default: true
-                      type: boolean
                     endpointRef:
                       description: A Reference to a named object.
                       properties:
@@ -62,6 +60,8 @@ spec:
                       items:
                         type: string
                       type: array
+                    krateoGateway:
+                      type: boolean
                     name:
                       type: string
                     path:
@@ -82,9 +82,6 @@ spec:
                     items:
                       description: API contains external api call info.
                       properties:
-                        enabled:
-                          default: true
-                          type: boolean
                         endpointRef:
                           description: A Reference to a named object.
                           properties:
@@ -102,6 +99,8 @@ spec:
                           items:
                             type: string
                           type: array
+                        krateoGateway:
+                          type: boolean
                         name:
                           type: string
                         path:
@@ -134,8 +133,30 @@ spec:
             required:
             - app
             type: object
-        required:
-        - spec
+          status:
+            properties:
+              allowedActions:
+                items:
+                  type: string
+                type: array
+              color:
+                type: string
+              content:
+                type: string
+              date:
+                type: string
+              icon:
+                type: string
+              tags:
+                type: string
+              title:
+                type: string
+            required:
+            - content
+            - title
+            type: object
         type: object
     served: true
     storage: true
+    subresources:
+      status: {}

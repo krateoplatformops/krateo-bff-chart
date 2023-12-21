@@ -4,4 +4,6 @@ podEnv:
     value: "8080"
   - name: KRATEO_BFF_DEBUG
     value: "true"
+  - name: AUTHN_NAMESPACE
+    value: "krateo-system"
 
