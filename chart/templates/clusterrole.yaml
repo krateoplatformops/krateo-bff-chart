@@ -28,3 +28,9 @@ rules:
   - '*'
   verbs:
   - '*'
+- apiGroups:
+  - layout.ui.krateo.io
+  resources:
+  - '*'
+  verbs:
+  - '*'
