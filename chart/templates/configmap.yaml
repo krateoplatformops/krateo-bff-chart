@@ -5,6 +5,6 @@ metadata:
   namespace: {{ .Release.Namespace }}
 data:
   KRATEO_BFF_DEBUG: "{{ .Values.KRATEO_BFF_DEBUG }}"
-  KRATEO_BFF_PORT: "{{ .Values.KRATEO_BFF_PORT }}"
+  KRATEO_BFF_PORT: "{{ .Values.service.targetPort }}"
   AUTHN_STORE_NAMESPACE: {{ .Values.AUTHN_STORE_NAMESPACE }}
  

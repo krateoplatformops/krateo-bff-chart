@@ -1,7 +1,3 @@
 
-KRATEO_BFF_PORT: "8080"
 KRATEO_BFF_DEBUG: "true"
 AUTHN_STORE_NAMESPACE: "krateo-system"
-
-
-
