@@ -1,9 +1,7 @@
 
-podEnv:
-  - name: KRATEO_BFF_PORT
-    value: "8080"
-  - name: KRATEO_BFF_DEBUG
-    value: "true"
-  - name: AUTHN_STORE_NAMESPACE
-    value: "krateo-system"
+KRATEO_BFF_PORT: "8080"
+KRATEO_BFF_DEBUG: "true"
+AUTHN_STORE_NAMESPACE: "krateo-system"
+
+
 
