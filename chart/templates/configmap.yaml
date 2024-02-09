@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Chart.Name }}
-  namespace: {{ .Release.Namespace }}
+  name: {{ include "krateo-bff.fullname" . }}
+  labels:
+    {{- include "krateo-bff.labels" . | nindent 4 }}
 data:
-  KRATEO_BFF_DEBUG: "{{ .Values.KRATEO_BFF_DEBUG }}"
-  KRATEO_BFF_PORT: "{{ .Values.service.targetPort }}"
-  AUTHN_STORE_NAMESPACE: {{ .Values.AUTHN_STORE_NAMESPACE }}
- 
+  KRATEO_BFF_DEBUG: "{{ .Values.env.KRATEO_BFF_DEBUG }}"
+  KRATEO_BFF_PORT: "{{ .Values.service.port }}"
+  AUTHN_STORE_NAMESPACE: {{ .Values.env.AUTHN_STORE_NAMESPACE }}
