@@ -7,3 +7,6 @@ podEnv:
   - name: AUTHN_STORE_NAMESPACE
     value: "krateo-system"
 
+service:
+  type: ClusterIP
+  port: 8080
