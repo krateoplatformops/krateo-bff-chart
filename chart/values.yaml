@@ -108,4 +108,3 @@ affinity: {}
 
 env:
   KRATEO_BFF_DEBUG: "true"
-  AUTHN_STORE_NAMESPACE: "krateo-system"
