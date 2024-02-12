@@ -75,11 +75,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /apis/health
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /apis/health
     port: http
 
 autoscaling:
