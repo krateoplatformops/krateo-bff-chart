@@ -75,11 +75,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /apis/health
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /apis/health
     port: http
 
 autoscaling:
@@ -110,3 +110,4 @@ affinity: {}
 
 env:
   KRATEO_BFF_DEBUG: "true"
+  KRATEO_BFF_CORS: "true"
