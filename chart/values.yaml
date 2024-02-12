@@ -110,3 +110,4 @@ affinity: {}
 
 env:
   KRATEO_BFF_DEBUG: "true"
+  KRATEO_BFF_CORS: "true"
