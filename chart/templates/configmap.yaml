@@ -9,3 +9,4 @@ data:
   KRATEO_BFF_PORT: "{{ .Values.service.port }}"
   AUTHN_STORE_NAMESPACE: {{ .Release.Namespace }}
   KRATEO_BFF_CORS: "{{ .Values.env.KRATEO_BFF_CORS }}"
+  KRATEO_BFF_DUMP_ENV: "{{ .Values.env.KRATEO_BFF_DUMP_ENV }}"
