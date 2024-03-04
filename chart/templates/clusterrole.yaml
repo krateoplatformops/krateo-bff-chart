@@ -42,3 +42,9 @@ rules:
   - '*'
   verbs:
   - '*'
+- apiGroups:
+  - apps.krateo.io
+  resources:
+  - '*'
+  verbs:
+  - '*'
